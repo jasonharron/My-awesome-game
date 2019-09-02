@@ -11,7 +11,6 @@ export default class Scene5 extends Phaser.Scene {
 
   preload () {
     // Preload assets
-    this.load.image('logo', './assets/logo.png');
 
     // Declare variables for center of the scene
     this.centerX = this.cameras.main.width / 2;
@@ -23,7 +22,7 @@ export default class Scene5 extends Phaser.Scene {
     ChangeScene.addChangeSceneEventListeners(this);
 
     //Create the scene
-    var logo = this.add.text(this.centerX - 20, this.centerY, 'Scene 5');
+    var text = this.add.text(this.centerX - 20, this.centerY, 'Scene 5');
   }
 
   update (time, delta) {
