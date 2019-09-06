@@ -1,5 +1,4 @@
 /*global Phaser*/
-import * as ChangeScene from "./changeScene.js";
 export default class BootScene extends Phaser.Scene {
   constructor () {
     super('Boot');
@@ -19,9 +18,6 @@ export default class BootScene extends Phaser.Scene {
   }
 
   create (data) {
-    // Event listener to change scenes
-    ChangeScene.addChangeSceneEventListeners(this);
-
     //Create the scene
     var logo = this.add.image(this.centerX, this.centerY, 'logo');
   }
